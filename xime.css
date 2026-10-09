@@ -1,0 +1,240 @@
+/* ==========================================
+   1. ESTILOS GENERALES Y BASE
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #4a3740; /* Café oscuro suave para mejorar el contraste sobre rosa */
+    background-color: #fff5f7; /* Fondo general rosa pastel muy claro */
+}
+
+/* ==========================================
+   2. ENCABEZADO Y MENÚ DE NAVEGACIÓN
+   ========================================== */
+header {
+    background-color: #fb7185; /* Rosa vibrante principal */
+    color: #ffffff;
+    padding: 2.5rem 1rem;
+    text-align: center;
+    border-bottom: 4px solid #f43f5e; /* Borde rosa más oscuro */
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 0.95rem;
+    color: #ffe4e6; /* Rosa muy claro para el texto secundario */
+    margin-bottom: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #ffffff;
+    background-color: #9f1239; /* Rosa oscuro elegante (Vino/Borgoña) */
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+    /* Transición suave para los efectos visuales */
+    transition: all 0.3s ease; 
+}
+
+/* Efecto visual interactivo al pasar el mouse por los botones */
+nav a:hover {
+    background-color: #881337; /* Rosa todavía más oscuro e intenso */
+    text-decoration: none;
+    transform: translateY(-3px); /* El botón sube suavemente 3 píxeles */
+    box-shadow: 0 6px 12px rgba(159, 18, 57, 0.3); /* Sombra rosa más marcada */
+}
+
+/* ==========================================
+   3. CONTENEDORES Y SECCIONES
+   ========================================== */
+.container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    background: #ffffff;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(251, 113, 133, 0.1); /* Sombra con tono rosa */
+    border-left: 5px solid #fda4af; /* Detalle lateral rosa dulce */
+}
+
+h2 {
+    color: #be123c; /* Rosa oscuro elegante para los títulos de sección */
+    border-bottom: 2px solid #ffe4e6;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+}
+
+/* Lista de conceptos */
+ul, ol {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+strong {
+    color: #9f1239; /* Resaltado de texto importante en rosa oscuro */
+}
+
+/* ==========================================
+   4. CUESTIONARIO Y PREGUNTAS
+   ========================================== */
+.pregunta {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed #fecdd3;
+}
+
+.pregunta:last-child {
+    border-bottom: none;
+}
+
+.pregunta h3 {
+    font-size: 1.1rem;
+    color: #e11d48; /* Rosa intenso para destacar las preguntas */
+    margin-bottom: 0.5rem;
+}
+
+/* ==========================================
+   5. CUADRO DE CONCLUSIÓN DESTACADA
+   ========================================== */
+.cuadro-conclusion {
+    background-color: #fff1f2; /* Un fondo rosa pálido muy bonito */
+    border-left: 4px solid #be123c; /* Línea lateral rosa oscuro para resaltar */
+    padding: 1rem;
+    border-radius: 4px;
+    font-style: italic;
+}
+
+/* ==========================================
+   6. FORMULARIO DE ENTREGA
+   ========================================== */
+.form-instruction {
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    color: #6b5a63;
+}
+
+.formulario-entrega {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.grupo-formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.grupo-formulario label {
+    font-weight: 600;
+    color: #be123c;
+    font-size: 0.95rem;
+}
+
+.grupo-formulario input {
+    padding: 0.8rem;
+    border: 2px solid #fecdd3;
+    border-radius: 8px;
+    background-color: #fffafb;
+    color: #4a3740;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.grupo-formulario input:focus {
+    border-color: #fb7185; /* Se vuelve rosa intenso al hacer clic */
+    background-color: #ffffff;
+}
+
+.boton-enviar {
+    background-color: #9f1239; /* Mismo rosa oscuro de los botones del menú */
+    color: #ffffff;
+    border: none;
+    padding: 0.9rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin-top: 0.5rem;
+}
+
+.boton-enviar:hover {
+    background-color: #881337;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(159, 18, 57, 0.25);
+}
+
+/* ==========================================
+   7. PIE DE PÁGINA (FOOTER)
+   ========================================== */
+footer {
+    background-color: #4c0519; /* Rosa extremadamente oscuro (casi vino) */
+    color: #ffe4e6;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+}
+
+footer a {
+    color: #fca5a5;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #fecdd3;
+}
+
+/* ==========================================
+   8. DISEÑO ADAPTABLE (RESPONSIVE)
+   ========================================== */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.75rem;
+        align-items: center;
+    }
+    
+    nav a {
+        display: block;
+        width: 80%;
+        text-align: center;
+    }
+    
+    section {
+        padding: 1.2rem;
+    }
+}

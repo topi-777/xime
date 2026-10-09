@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lo que aprendí del vídeo - Supabase</title>
+    <link rel="stylesheet" href="xime.css">
+</head>
+<body>
+
+    <header>
+        <h1>Lo que aprendí del vídeo</h1>
+        <p class="subtitle">Estudiante: Ximena Pérez | Curso: 2do año - 6ta sección | Asignatura: Informática</p>
+        <nav>
+            <ul>
+                <li><a href="#intro">Introducción</a></li>
+                <li><a href="#conceptos">Conceptos</a></li>
+                <li><a href="#cuestionario">Cuestionario</a></li>
+                <li><a href="#practica">Aplicación</a></li>
+                <li><a href="#recursos">Recursos</a></li>
+                <li><a href="#fuentes">Fuentes</a></li>
+                <li><a href="#entrega">Entrega</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="intro">
+            <h2>1. Introducción</h2>
+            <p>Esta página web presenta una recopilación analítica y técnica sobre el ecosistema de Supabase, basándose en el tutorial práctico de REST API. Exploramos cómo esta alternativa de código abierto a Firebase agiliza la creación y despliegue de bases de datos relacionales en la nube.</p>
+        </section>
+
+        <section id="conceptos">
+            <h2>2. Conceptos Fundamentales</h2>
+            <ul>
+                <li><strong>BaaS (Backend as a Service):</strong> Plataformas que resuelven de forma automática el alojamiento, servidores y bases de datos para que los desarrolladores se concentren en el frontend.</li>
+                <li><strong>PostgreSQL:</strong> Base de datos relacional potente y robusta utilizada internamente por Supabase.</li>
+                <li><strong>RLS (Row Level Security):</strong> Reglas de seguridad estrictas que filtran qué filas puede ver, editar o borrar un usuario según su autenticación.</li>
+                <li><strong>API REST:</strong> Forma de trabajar con los datos mediante peticiones HTTP: GET (leer), POST (crear), PATCH (modificar) y DELETE (borrar). Supabase la genera sola a partir de cada tabla.</li>
+                <li><strong>Código abierto (Open Source):</strong> Su código puede consultarse y reutilizarse libremente, lo que da portabilidad y evita depender de un único proveedor.</li>
+            </ul>
+        </section>
+
+        <section id="cuestionario">
+            <h2>3. Cuestionario Resuelto</h2>
+            
+            <div class="pregunta">
+                <h3>1. ¿Cuál es el tema principal del video? Explica de qué trata.</h3>
+                <p>El tema principal del vídeo es una introducción práctica y un recorrido general (Overview) de Supabase como alternativa de código abierto a Firebase.</p>
+            </div>
+
+            <div class="pregunta">
+                <h3>2. ¿Qué problema o necesidad tecnológica se aborda?</h3>
+                <p>El video aborda principalmente el problema de la complejidad y el tiempo que requiere configurar un backend desde cero para una aplicación web o móvil.</p>
+            </div>
+
+            <div class="pregunta">
+                <h3>3. ¿Cuáles son los cinco conceptos más importantes? Define cada uno.</h3>
+                <p>Los cinco conceptos fundamentales de Supabase incluyen el Backend as a Service (BaaS) para la automatización del servidor, el modelo de código abierto (Open Source) para la portabilidad, y PostgreSQL como base de datos relacional central. Además, el sistema genera automáticamente una API REST para la comunicación con el frontend e implementa Row Level Security (RLS) para gestionar la seguridad a nivel de datos.</p>
+            </div>
+
+            <div class="pregunta">
+                <h3>4. ¿Qué herramientas, programas o tecnologías se mencionan y para qué sirven?</h3>
+                <p>Algunas de las herramientas mencionadas son:</p>
+                <ul>
+                    <li><strong>Supabase:</strong> Es el servicio principal del tutorial. Sirve como una plataforma de Backend as a Service (BaaS) de código abierto que proporciona bases de datos, autenticación de usuarios, almacenamiento de archivos y funciones en la nube sin necesidad de configurar un servidor propio de manera tradicional.</li>
+                    <li><strong>PostgreSQL (Postgres):</strong> Es el sistema de gestión de base de datos relacional que corre detrás de Supabase. Sirve para almacenar toda la información del proyecto de manera organizada en tablas, soportando consultas complejas y la seguridad de los datos.</li>
+                    <li><strong>REST API:</strong> Una tecnología/arquitectura de comunicación autogenerada de forma inmediata por Supabase. Sirve para que cualquier aplicación cliente (frontend) pueda consultar, insertar, actualizar o eliminar datos de la base de datos a través de peticiones HTTP estándar.</li>
+                    <li><strong>Thunder Client / REST Client (Extensiones de VS Code):</strong> Herramientas de software utilizadas dentro del editor de código. Sirven para realizar pruebas de peticiones HTTP (GET, POST, DELETE, etc.) directamente a la REST API autogenerada por Supabase sin salir del entorno de desarrollo.</li>
+                    <li><strong>Node.js y JavaScript:</strong> El entorno de ejecución y el lenguaje de programación sugeridos para el ecosistema del proyecto. Sirven para escribir la lógica de programación del lado del cliente o frontend que consumirá los servicios de Supabase utilizando su SDK oficial.</li>
+                </ul>
+            </div>
+
+            <div class="pregunta">
+                <h3>5. ¿Qué procedimientos o pasos se explican? Preséntalos en orden.</h3>
+                <ol>
+                    <li>Primero tienes que hacerte una cuenta en Supabase y vincularla con GitHub.</li>
+                    <li>Crea un proyecto nuevo.</li>
+                    <li>Crea una tabla de productos para cargar filas.</li>
+                    <li>Copiar la ANON key y URL.</li>
+                    <li>Probar en Postman o extensiones de peticiones HTTP.</li>
+                    <li>Haz consultas a la base de datos.</li>
+                </ol>
+            </div>
+
+            <div class="pregunta">
+                <h3>6. ¿Qué ejemplos prácticos aparecen? Explica uno detalladamente.</h3>
+                <p>El video muestra el ejemplo práctico de una tabla de productos. Primero, se diseña la tabla (con campos como ID y título) y se introducen datos de prueba. Luego, usando una extensión como Thunder Client en VS Code, se realiza una petición HTTP (GET) enviando la URL del proyecto y su clave pública (Anon Key) para demostrar cómo Supabase devuelve la información de inmediato en formato JSON. Finalmente, para asegurar el proyecto, se activa la función RLS (Row Level Security) en el panel; el instructor muestra cómo las peticiones quedan bloqueadas automáticamente hasta que se configura una regla específica que define quién puede leer o modificar los registros.</p>
+            </div>
+
+            <div class="pregunta">
+                <h3>7. ¿Qué conocimientos previos son necesarios para comprender lo explicado?</h3>
+                <p>Necesitarías saber qué es una base de datos y cómo hacer correctamente una tabla, ya que es algo complicado hacerla 'a ciegas', además de tener un conocimiento básico sobre lenguajes de programación como JavaScript y HTML.</p>
+            </div>
+
+            <div class="pregunta">
+                <h3>8. ¿Qué ventajas o beneficios ofrece la tecnología o procedimiento?</h3>
+                <p>Las principales ventajas de Supabase son la reducción drástica del tiempo de desarrollo al automatizar la creación del servidor y la autogeneración inmediata de una API REST lista para usar cada vez que creas una tabla.</p>
+            </div>
+
+            <div class="pregunta">
+                <h3>9. ¿Qué dificultades, errores o precauciones deben considerarse?</h3>
+                <p>Un error extremadamente común es activar Row Level Security (RLS) y olvidar crear las políticas de acceso, lo que hace que tu aplicación deje de recibir datos (devuelve arreglos vacíos []) y parezca "muda".</p>
+            </div>
+
+            <div class="pregunta">
+                <h3>10. ¿Cómo aplicarías lo aprendido en un proyecto informático real?</h3>
+                <p>Lo aplicaría para sitios web en donde por alguna razón necesite una tabla de una manera rápida y eficaz. Posiblemente lo usaría para un proyecto grande del colegio para ahorrar tiempo.</p>
+            </div>
+
+            <div class="pregunta">
+                <h3>11. ¿Qué parte del video consideras más importante y por qué?</h3>
+                <p>La configuración práctica de las reglas RLS (Row Level Security) junto a la REST API autogenerada. Esto es lo más importante porque Supabase resuelve el problema de la infraestructura al crear una API de forma automática, pero advierte inmediatamente sobre el peligro de dejar los datos expuestos públicamente. Al enseñar a activar y configurar el RLS, se protege la base de datos directamente desde su panel de control.</p>
+            </div>
+
+            <div class="pregunta">
+                <h3>12. ¿Qué conocimientos nuevos adquiriste y cómo los explicarías a otra persona?</h3>
+                <p>Antes no sabía hacer tablas por mi cuenta; las veces que las hice fue porque seguí las instrucciones a ciegas, pero ahora sé todo el proceso que eso conlleva. Lo explicaría de la siguiente forma: <em>"Imagínate que crear una tabla en Supabase es como organizar un casillero o un organizador de zapatos familiar donde cada espacio tiene una etiqueta clara."</em></p>
+            </div>
+        </section>
+
+        <section id="practica">
+            <h2>4. Aplicación Práctica</h2>
+            <p>Lo aprendido se puede implementar directamente en aplicaciones web que requieran un login de usuarios rápido y almacenamiento de datos persistentes sin necesidad de construir una arquitectura de servidores Node.js desde cero.</p>
+            <p style="margin-top:1rem;">Un procedimiento que se puede poner en práctica es <strong>leer los productos de la tabla desde la API</strong> y protegerla con una política:</p>
+            <ol>
+                <li>Crear la tabla de productos con sus columnas (por ejemplo <code>id</code> y <code>title</code>).</li>
+                <li>Activar RLS en la tabla.</li>
+                <li>Crear una política de lectura (SELECT) para que se puedan ver los productos.</li>
+                <li>Enviar una petición GET con las cabeceras <code>apikey</code> y <code>Authorization</code>.</li>
+            </ol>
+            <p>Ejemplo de la petición (con datos de muestra):</p>
+            <pre style="background:#fff1f2; border-left:4px solid #be123c; padding:1rem; border-radius:4px; overflow-x:auto; margin-bottom:1rem; font-size:0.9rem;"><code>GET https://TU-PROYECTO.supabase.co/rest/v1/products?select=*
+apikey: TU_ANON_KEY
+Authorization: Bearer TU_ANON_KEY</code></pre>
+            <p>Qué operación corresponde a cada método HTTP:</p>
+            <div style="overflow-x:auto; margin-bottom:1rem;">
+                <table style="border-collapse:collapse; width:100%; font-size:0.95rem;">
+                    <thead><tr><th style="background:#fb7185; color:#fff; padding:0.5rem 0.8rem; text-align:left;">Método</th><th style="background:#fb7185; color:#fff; padding:0.5rem 0.8rem; text-align:left;">Acción</th><th style="background:#fb7185; color:#fff; padding:0.5rem 0.8rem; text-align:left;">Equivale a</th></tr></thead>
+                    <tbody>
+                        <tr><td style="border:1px solid #fecdd3; padding:0.5rem 0.8rem;">GET</td><td style="border:1px solid #fecdd3; padding:0.5rem 0.8rem;">Leer filas</td><td style="border:1px solid #fecdd3; padding:0.5rem 0.8rem;">SELECT</td></tr>
+                        <tr><td style="border:1px solid #fecdd3; padding:0.5rem 0.8rem;">POST</td><td style="border:1px solid #fecdd3; padding:0.5rem 0.8rem;">Agregar una fila</td><td style="border:1px solid #fecdd3; padding:0.5rem 0.8rem;">INSERT</td></tr>
+                        <tr><td style="border:1px solid #fecdd3; padding:0.5rem 0.8rem;">PATCH</td><td style="border:1px solid #fecdd3; padding:0.5rem 0.8rem;">Modificar filas</td><td style="border:1px solid #fecdd3; padding:0.5rem 0.8rem;">UPDATE</td></tr>
+                        <tr><td style="border:1px solid #fecdd3; padding:0.5rem 0.8rem;">DELETE</td><td style="border:1px solid #fecdd3; padding:0.5rem 0.8rem;">Borrar filas</td><td style="border:1px solid #fecdd3; padding:0.5rem 0.8rem;">DELETE</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="cuadro-conclusion"><p><strong>Precaución:</strong> en un proyecto real, la clave de servicio (service role) nunca debe ir en el código del navegador.</p></div>
+        </section>
+
+        <section id="recursos">
+            <h2>Recursos Visuales</h2>
+            <p>Diagramas que ilustran los ejemplos del video y las respuestas del cuestionario:</p>
+            <figure style="margin: 1.5rem 0;">
+                <img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNzIwIDI2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IkRpYWdyYW1hOiBsYSBhcGxpY2FjacOzbiB3ZWIgcGlkZSBkYXRvcyBhIGxhIFJFU1QgQVBJIGRlIFN1cGFiYXNlLCBxdWUgY29uc3VsdGEgbGEgYmFzZSBkZSBkYXRvcyBQb3N0Z3JlU1FMIHkgZGV2dWVsdmUgSlNPTiI+CjxkZWZzPjxtYXJrZXIgaWQ9ImEiIG1hcmtlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgbWFya2VyV2lkdGg9IjEwIiBtYXJrZXJIZWlnaHQ9IjEwIiByZWZYPSI4IiByZWZZPSI1IiBvcmllbnQ9ImF1dG8iPjxwYXRoIGQ9Ik0wLDAgTDEwLDUgTDAsMTAgeiIgZmlsbD0iI2JlMTIzYyIvPjwvbWFya2VyPgo8bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZmYxZjIiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmZmU0ZTYiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz4KPHJlY3Qgd2lkdGg9IjcyMCIgaGVpZ2h0PSIyNjAiIHJ4PSIxOCIgZmlsbD0iI2ZmZiIvPgo8ZyBmb250LWZhbWlseT0iU2Vnb2UgVUksQXJpYWwsc2Fucy1zZXJpZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+Cjx0ZXh0IHg9IjM2MCIgeT0iMzgiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiNiZTEyM2MiPkFzw60gdmlhamEgbGEgaW5mb3JtYWNpw7NuIGVuIFN1cGFiYXNlPC90ZXh0Pgo8cmVjdCB4PSIyMCIgeT0iNzAiIHdpZHRoPSIxNzAiIGhlaWdodD0iMTEwIiByeD0iMTQiIGZpbGw9InVybCgjZykiIHN0cm9rZT0iI2ZiNzE4NSIgc3Ryb2tlLXdpZHRoPSIyIi8+CjxyZWN0IHg9IjI2NSIgeT0iNzAiIHdpZHRoPSIxOTAiIGhlaWdodD0iMTEwIiByeD0iMTQiIGZpbGw9InVybCgjZykiIHN0cm9rZT0iI2ZiNzE4NSIgc3Ryb2tlLXdpZHRoPSIyIi8+CjxyZWN0IHg9IjUzMCIgeT0iNzAiIHdpZHRoPSIxNzAiIGhlaWdodD0iMTEwIiByeD0iMTQiIGZpbGw9InVybCgjZykiIHN0cm9rZT0iI2ZiNzE4NSIgc3Ryb2tlLXdpZHRoPSIyIi8+CjxyZWN0IHg9IjQwIiB5PSI4OCIgd2lkdGg9IjEzMCIgaGVpZ2h0PSI2NCIgcng9IjYiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI2JlMTIzYyIvPjxyZWN0IHg9IjQwIiB5PSI4OCIgd2lkdGg9IjEzMCIgaGVpZ2h0PSIxNCIgcng9IjYiIGZpbGw9IiNmYjcxODUiLz48dGV4dCB4PSIxMDUiIHk9IjEyOCIgZm9udC1zaXplPSIxMiIgZmlsbD0iIzRhMzc0MCI+TWkgcMOhZ2luYSB3ZWI8L3RleHQ+PHRleHQgeD0iMTA1IiB5PSIxNzAiIGZvbnQtc2l6ZT0iMTMiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiM5ZjEyMzkiPkFwbGljYWNpw7NuPC90ZXh0Pgo8dGV4dCB4PSIzNjAiIHk9IjExMiIgZm9udC1zaXplPSIyNiI+4pqhPC90ZXh0Pjx0ZXh0IHg9IjM2MCIgeT0iMTM4IiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjOWYxMjM5Ij5SRVNUIEFQSTwvdGV4dD48dGV4dCB4PSIzNjAiIHk9IjE1NyIgZm9udC1zaXplPSIxMSIgZmlsbD0iIzZiNWE2MyI+KHNlIGNyZWEgc29sYSBjb24gbGEgdGFibGEpPC90ZXh0Pjx0ZXh0IHg9IjM2MCIgeT0iMTcyIiBmb250LXNpemU9IjEwIiBmaWxsPSIjNmI1YTYzIj4rIEFOT04ga2V5ICsgUkxTPC90ZXh0Pgo8ZWxsaXBzZSBjeD0iNjE1IiBjeT0iMTAwIiByeD0iMzgiIHJ5PSIxMSIgZmlsbD0iI2ZiNzE4NSIvPjxyZWN0IHg9IjU3NyIgeT0iMTAwIiB3aWR0aD0iNzYiIGhlaWdodD0iMzQiIGZpbGw9IiNmZGE0YWYiLz48ZWxsaXBzZSBjeD0iNjE1IiBjeT0iMTM0IiByeD0iMzgiIHJ5PSIxMSIgZmlsbD0iI2ZkYTRhZiIvPjx0ZXh0IHg9IjYxNSIgeT0iMTYyIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjOWYxMjM5Ij5Qb3N0Z3JlU1FMPC90ZXh0Pjx0ZXh0IHg9IjYxNSIgeT0iMTc2IiBmb250LXNpemU9IjEwIiBmaWxsPSIjNmI1YTYzIj50YWJsYSBkZSBwcm9kdWN0b3M8L3RleHQ+CjxwYXRoIGQ9Ik0xOTIgMTA1IEgyNjIiIHN0cm9rZT0iI2JlMTIzYyIgc3Ryb2tlLXdpZHRoPSIzIiBtYXJrZXItZW5kPSJ1cmwoI2EpIi8+PHBhdGggZD0iTTI2MiAxNDggSDE5MiIgc3Ryb2tlPSIjYmUxMjNjIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1kYXNoYXJyYXk9IjYgNSIgbWFya2VyLWVuZD0idXJsKCNhKSIvPjxwYXRoIGQ9Ik00NTcgMTA1IEg1MjciIHN0cm9rZT0iI2JlMTIzYyIgc3Ryb2tlLXdpZHRoPSIzIiBtYXJrZXItZW5kPSJ1cmwoI2EpIi8+PHBhdGggZD0iTTUyNyAxNDggSDQ1NyIgc3Ryb2tlPSIjYmUxMjNjIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1kYXNoYXJyYXk9IjYgNSIgbWFya2VyLWVuZD0idXJsKCNhKSIvPgo8dGV4dCB4PSIyMjciIHk9Ijk0IiBmb250LXNpemU9IjExIiBmaWxsPSIjOWYxMjM5Ij5HRVQgKEhUVFApPC90ZXh0Pjx0ZXh0IHg9IjIyNyIgeT0iMTcwIiBmb250LXNpemU9IjExIiBmaWxsPSIjOWYxMjM5Ij5KU09OPC90ZXh0Pjx0ZXh0IHg9IjQ5MiIgeT0iOTQiIGZvbnQtc2l6ZT0iMTEiIGZpbGw9IiM5ZjEyMzkiPmNvbnN1bHRhPC90ZXh0Pjx0ZXh0IHg9IjQ5MiIgeT0iMTcwIiBmb250LXNpemU9IjExIiBmaWxsPSIjOWYxMjM5Ij5maWxhczwvdGV4dD4KPHRleHQgeD0iMzYwIiB5PSIyMjIiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM2YjVhNjMiPkZsZWNoYSBsbGVuYTogcGVkaWRvIMK3IEZsZWNoYSBwdW50ZWFkYTogcmVzcHVlc3RhPC90ZXh0Pjx0ZXh0IHg9IjM2MCIgeT0iMjQ0IiBmb250LXNpemU9IjEwIiBmaWxsPSIjNmI1YTYzIj5JbHVzdHJhY2nDs24gcHJvcGlhPC90ZXh0Pgo8L2c+PC9zdmc+Cg==" alt="Diagrama del flujo: aplicación web, REST API y base de datos PostgreSQL" style="display:block; max-width:100%; height:auto; margin:0 auto; border:1px solid #ffe4e6; border-radius:8px;">
+                <figcaption style="font-size:0.9rem; color:#6b5a63; text-align:center; margin-top:0.5rem;"><strong>Figura 1.</strong> Cómo se conecta una aplicación con Supabase: la app pide datos a la REST API y esta consulta PostgreSQL.</figcaption>
+            </figure>
+            <figure style="margin: 1.5rem 0;">
+                <img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNzIwIDI3MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IlRhYmxhIGRlIHByb2R1Y3RvcyBjb24gY29sdW1uYXMgaWQgeSB0aXRsZSB5IHRyZXMgZmlsYXMgZGUgZWplbXBsbyI+CjxkZWZzPjxtYXJrZXIgaWQ9ImEiIG1hcmtlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgbWFya2VyV2lkdGg9IjEwIiBtYXJrZXJIZWlnaHQ9IjEwIiByZWZYPSI4IiByZWZZPSI1IiBvcmllbnQ9ImF1dG8iPjxwYXRoIGQ9Ik0wLDAgTDEwLDUgTDAsMTAgeiIgZmlsbD0iI2JlMTIzYyIvPjwvbWFya2VyPgo8bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZmYxZjIiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmZmU0ZTYiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz4KPHJlY3Qgd2lkdGg9IjcyMCIgaGVpZ2h0PSIyNzAiIHJ4PSIxOCIgZmlsbD0iI2ZmZiIvPgo8ZyBmb250LWZhbWlseT0iU2Vnb2UgVUksQXJpYWwsc2Fucy1zZXJpZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+Cjx0ZXh0IHg9IjM2MCIgeT0iMzYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiNiZTEyM2MiPlRhYmxhIGRlIHByb2R1Y3RvcyBlbiBTdXBhYmFzZSAoZWplbXBsbyk8L3RleHQ+CjxyZWN0IHg9IjEzMCIgeT0iNTYiIHdpZHRoPSI0NjAiIGhlaWdodD0iMTUwIiByeD0iMTIiIGZpbGw9IiNmZmYxZjIiIHN0cm9rZT0iI2ZiNzE4NSIgc3Ryb2tlLXdpZHRoPSIyIi8+PHJlY3QgeD0iMTMwIiB5PSI1NiIgd2lkdGg9IjQ2MCIgaGVpZ2h0PSIzOCIgcng9IjEyIiBmaWxsPSIjZmI3MTg1Ii8+PHJlY3QgeD0iMTMwIiB5PSI3OCIgd2lkdGg9IjQ2MCIgaGVpZ2h0PSIxNiIgZmlsbD0iI2ZiNzE4NSIvPgo8ZyBmaWxsPSIjZmZmIiBmb250LXNpemU9IjEzIiBmb250LXdlaWdodD0iNzAwIiB0ZXh0LWFuY2hvcj0ic3RhcnQiPjx0ZXh0IHg9IjE2MCIgeT0iODAiPmlkPC90ZXh0Pjx0ZXh0IHg9IjI2MCIgeT0iODAiPnRpdGxlPC90ZXh0PjwvZz4KPGcgZmlsbD0iIzRhMzc0MCIgZm9udC1zaXplPSIxMyIgdGV4dC1hbmNob3I9InN0YXJ0Ij48dGV4dCB4PSIxNjAiIHk9IjEyMiI+MTwvdGV4dD48dGV4dCB4PSIyNjAiIHk9IjEyMiI+bGFwdG9wPC90ZXh0PjxsaW5lIHgxPSIxMzAiIHkxPSIxMzQiIHgyPSI1OTAiIHkyPSIxMzQiIHN0cm9rZT0iI2ZlY2RkMyIvPjx0ZXh0IHg9IjE2MCIgeT0iMTU2Ij4yPC90ZXh0Pjx0ZXh0IHg9IjI2MCIgeT0iMTU2Ij5tb25pdG9yPC90ZXh0PjxsaW5lIHgxPSIxMzAiIHkxPSIxNjgiIHgyPSI1OTAiIHkyPSIxNjgiIHN0cm9rZT0iI2ZlY2RkMyIvPjx0ZXh0IHg9IjE2MCIgeT0iMTkyIj4zPC90ZXh0Pjx0ZXh0IHg9IjI2MCIgeT0iMTkyIj5tb3VzZTwvdGV4dD48L2c+Cjx0ZXh0IHg9IjM2MCIgeT0iMjM2IiBmb250LXNpemU9IjEyIiBmaWxsPSIjNmI1YTYzIj5DYWRhIGZpbGEgZXMgdW4gcHJvZHVjdG87IGNhZGEgY29sdW1uYSBlcyB1biBkYXRvIChpZCB5IHTDrXR1bG8pLjwvdGV4dD48dGV4dCB4PSIzNjAiIHk9IjI1NiIgZm9udC1zaXplPSIxMCIgZmlsbD0iIzZiNWE2MyI+SWx1c3RyYWNpw7NuIHByb3BpYTwvdGV4dD4KPC9nPjwvc3ZnPgo=" alt="Tabla de productos con columnas id y title" style="display:block; max-width:100%; height:auto; margin:0 auto; border:1px solid #ffe4e6; border-radius:8px;">
+                <figcaption style="font-size:0.9rem; color:#6b5a63; text-align:center; margin-top:0.5rem;"><strong>Figura 2.</strong> Ejemplo de la tabla de productos con campos id y título.</figcaption>
+            </figure>
+            <figure style="margin: 1.5rem 0;">
+                <img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNzIwIDMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IlRyZXMgZXN0YWRvczogc2luIFJMUyB0b2RvcyB2ZW4gdG9kbzsgY29uIFJMUyB5IHNpbiBwb2zDrXRpY2FzIGxhIHJlc3B1ZXN0YSBlcyB1bmEgbGlzdGEgdmFjw61hOyBjb24gcG9sw610aWNhIHNvbG8gcGFzYW4gbG9zIHBlcm1pdGlkb3MiPgo8ZGVmcz48bWFya2VyIGlkPSJhIiBtYXJrZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIG1hcmtlcldpZHRoPSIxMCIgbWFya2VySGVpZ2h0PSIxMCIgcmVmWD0iOCIgcmVmWT0iNSIgb3JpZW50PSJhdXRvIj48cGF0aCBkPSJNMCwwIEwxMCw1IEwwLDEwIHoiIGZpbGw9IiNiZTEyM2MiLz48L21hcmtlcj4KPGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmZmMWYyIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZmZlNGU2Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+CjxyZWN0IHdpZHRoPSI3MjAiIGhlaWdodD0iMzAwIiByeD0iMTgiIGZpbGw9IiNmZmYiLz4KPGcgZm9udC1mYW1pbHk9IlNlZ29lIFVJLEFyaWFsLHNhbnMtc2VyaWYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPgo8dGV4dCB4PSIzNjAiIHk9IjM0IiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjYmUxMjNjIj5RdcOpIGhhY2UgUkxTIChSb3cgTGV2ZWwgU2VjdXJpdHkpPC90ZXh0Pgo8cmVjdCB4PSIyMCIgeT0iNTYiIHdpZHRoPSIyMTUiIGhlaWdodD0iMTk2IiByeD0iMTQiIGZpbGw9InVybCgjZykiIHN0cm9rZT0iI2ZiNzE4NSIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjx0ZXh0IHg9IjEyNy41IiB5PSI4NiIgZm9udC1zaXplPSIxMyIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iIzlmMTIzOSI+MS4gU2luIFJMUzwvdGV4dD48dGV4dCB4PSIxMjcuNSIgeT0iMTMwIiBmb250LXNpemU9IjM2Ij7wn5STPC90ZXh0Pjx0ZXh0IHg9IjEyNy41IiB5PSIxNjYiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM2YjVhNjMiPkN1YWxxdWllcmEgY29uIGxhIEFOT04ga2V5PC90ZXh0Pjx0ZXh0IHg9IjEyNy41IiB5PSIxODIiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM2YjVhNjMiPnB1ZWRlIGxlZXIgeSBtb2RpZmljYXI8L3RleHQ+PHRleHQgeD0iMTI3LjUiIHk9IjIyMiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iIzlmMTIzOSI+W2xhcHRvcCwgbW9uaXRvciwgbW91c2VdPC90ZXh0Pgo8cGF0aCBkPSJNMjM3IDE1NCBIMjUxIiBzdHJva2U9IiNiZTEyM2MiIHN0cm9rZS13aWR0aD0iMi41IiBtYXJrZXItZW5kPSJ1cmwoI2EpIi8+CjxyZWN0IHg9IjI1MyIgeT0iNTYiIHdpZHRoPSIyMTUiIGhlaWdodD0iMTk2IiByeD0iMTQiIGZpbGw9InVybCgjZykiIHN0cm9rZT0iI2ZiNzE4NSIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjx0ZXh0IHg9IjM2MC41IiB5PSI4NiIgZm9udC1zaXplPSIxMyIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iIzlmMTIzOSI+Mi4gUkxTIGFjdGl2bywgc2luIHBvbMOtdGljYXM8L3RleHQ+PHRleHQgeD0iMzYwLjUiIHk9IjEzMCIgZm9udC1zaXplPSIzNiI+8J+UkjwvdGV4dD48dGV4dCB4PSIzNjAuNSIgeT0iMTY2IiBmb250LXNpemU9IjEyIiBmaWxsPSIjNmI1YTYzIj5OYWRpZSB0aWVuZSBwZXJtaXNvOjwvdGV4dD48dGV4dCB4PSIzNjAuNSIgeT0iMTgyIiBmb250LXNpemU9IjEyIiBmaWxsPSIjNmI1YTYzIj5sYSBBUEkgbm8gbXVlc3RyYSBmaWxhczwvdGV4dD48dGV4dCB4PSIzNjAuNSIgeT0iMjIyIiBmb250LXNpemU9IjEyIiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjYmUxMjNjIj5bIF08L3RleHQ+CjxwYXRoIGQ9Ik00NzAgMTU0IEg0ODQiIHN0cm9rZT0iI2JlMTIzYyIgc3Ryb2tlLXdpZHRoPSIyLjUiIG1hcmtlci1lbmQ9InVybCgjYSkiLz4KPHJlY3QgeD0iNDg2IiB5PSI1NiIgd2lkdGg9IjIxNSIgaGVpZ2h0PSIxOTYiIHJ4PSIxNCIgZmlsbD0idXJsKCNnKSIgc3Ryb2tlPSIjZmI3MTg1IiBzdHJva2Utd2lkdGg9IjIiLz4KPHRleHQgeD0iNTkzLjUiIHk9Ijg2IiBmb250LXNpemU9IjEzIiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjOWYxMjM5Ij4zLiBSTFMgKyBwb2zDrXRpY2E8L3RleHQ+PHRleHQgeD0iNTkzLjUiIHk9IjEzMCIgZm9udC1zaXplPSIzNiI+8J+Xne+4jzwvdGV4dD48dGV4dCB4PSI1OTMuNSIgeT0iMTY2IiBmb250LXNpemU9IjEyIiBmaWxsPSIjNmI1YTYzIj5Tb2xvIHBhc2EgcXVpZW4gY3VtcGxlPC90ZXh0Pjx0ZXh0IHg9IjU5My41IiB5PSIxODIiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM2YjVhNjMiPmxhIHJlZ2xhIGRlZmluaWRhPC90ZXh0Pjx0ZXh0IHg9IjU5My41IiB5PSIyMjIiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiMxNTgwM2QiPltmaWxhcyBwZXJtaXRpZGFzXTwvdGV4dD4KPHRleHQgeD0iMzYwIiB5PSIyODIiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9IiM2YjVhNjMiPklsdXN0cmFjacOzbiBwcm9waWE8L3RleHQ+CjwvZz48L3N2Zz4K" alt="Tres estados de seguridad: sin RLS, RLS sin políticas y RLS con política" style="display:block; max-width:100%; height:auto; margin:0 auto; border:1px solid #ffe4e6; border-radius:8px;">
+                <figcaption style="font-size:0.9rem; color:#6b5a63; text-align:center; margin-top:0.5rem;"><strong>Figura 3.</strong> Ejemplo de RLS: sin reglas todo es visible; con RLS y sin políticas la respuesta es vacía; con política solo pasan los permitidos.</figcaption>
+            </figure>
+            <figure style="margin: 1.5rem 0;">
+                <img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNzIwIDI1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IlNlaXMgcGFzb3MgZGVsIHByb2NlZGltaWVudG86IGNyZWFyIGN1ZW50YSwgcHJveWVjdG8sIHRhYmxhLCBjb3BpYXIgQU5PTiBrZXkgeSBVUkwsIHByb2JhciBsYSBBUEkgeSBoYWNlciBjb25zdWx0YXMiPgo8ZGVmcz48bWFya2VyIGlkPSJhIiBtYXJrZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIG1hcmtlcldpZHRoPSIxMCIgbWFya2VySGVpZ2h0PSIxMCIgcmVmWD0iOCIgcmVmWT0iNSIgb3JpZW50PSJhdXRvIj48cGF0aCBkPSJNMCwwIEwxMCw1IEwwLDEwIHoiIGZpbGw9IiNiZTEyM2MiLz48L21hcmtlcj4KPGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmZmMWYyIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZmZlNGU2Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+CjxyZWN0IHdpZHRoPSI3MjAiIGhlaWdodD0iMjUwIiByeD0iMTgiIGZpbGw9IiNmZmYiLz4KPGcgZm9udC1mYW1pbHk9IlNlZ29lIFVJLEFyaWFsLHNhbnMtc2VyaWYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPgo8dGV4dCB4PSIzNjAiIHk9IjMyIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjYmUxMjNjIj5QYXNvcyBkZWwgcHJvY2VkaW1pZW50bywgZW4gb3JkZW48L3RleHQ+CjxyZWN0IHg9IjIwIiB5PSI1MiIgd2lkdGg9IjIxNiIgaGVpZ2h0PSI2NiIgcng9IjE0IiBmaWxsPSJ1cmwoI2cpIiBzdHJva2U9IiNmYjcxODUiIHN0cm9rZS13aWR0aD0iMiIvPgo8Y2lyY2xlIGN4PSI0NiIgY3k9Ijg1IiByPSIxNCIgZmlsbD0iI2JlMTIzYyIvPjx0ZXh0IHg9IjQ2IiB5PSI5MCIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iI2ZmZiI+MTwvdGV4dD48dGV4dCB4PSIxNDQiIHk9IjgyIiBmb250LXNpemU9IjExLjUiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiM5ZjEyMzkiPkNyZWFyIGN1ZW50YSBlbiBTdXBhYmFzZTwvdGV4dD48dGV4dCB4PSIxNDQiIHk9Ijk5IiBmb250LXNpemU9IjExIiBmaWxsPSIjNmI1YTYzIj55IHZpbmN1bGFyIGNvbiBHaXRIdWI8L3RleHQ+CjxwYXRoIGQ9Ik0yMzcgODUgSDI1MSIgc3Ryb2tlPSIjYmUxMjNjIiBzdHJva2Utd2lkdGg9IjIiIG1hcmtlci1lbmQ9InVybCgjYSkiLz4KPHJlY3QgeD0iMjUyIiB5PSI1MiIgd2lkdGg9IjIxNiIgaGVpZ2h0PSI2NiIgcng9IjE0IiBmaWxsPSJ1cmwoI2cpIiBzdHJva2U9IiNmYjcxODUiIHN0cm9rZS13aWR0aD0iMiIvPgo8Y2lyY2xlIGN4PSIyNzgiIGN5PSI4NSIgcj0iMTQiIGZpbGw9IiNiZTEyM2MiLz48dGV4dCB4PSIyNzgiIHk9IjkwIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjZmZmIj4yPC90ZXh0Pjx0ZXh0IHg9IjM3NiIgeT0iOTAiIGZvbnQtc2l6ZT0iMTEuNSIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iIzlmMTIzOSI+Q3JlYXIgdW4gcHJveWVjdG8gbnVldm88L3RleHQ+CjxwYXRoIGQ9Ik00NjkgODUgSDQ4MyIgc3Ryb2tlPSIjYmUxMjNjIiBzdHJva2Utd2lkdGg9IjIiIG1hcmtlci1lbmQ9InVybCgjYSkiLz4KPHJlY3QgeD0iNDg0IiB5PSI1MiIgd2lkdGg9IjIxNiIgaGVpZ2h0PSI2NiIgcng9IjE0IiBmaWxsPSJ1cmwoI2cpIiBzdHJva2U9IiNmYjcxODUiIHN0cm9rZS13aWR0aD0iMiIvPgo8Y2lyY2xlIGN4PSI1MTAiIGN5PSI4NSIgcj0iMTQiIGZpbGw9IiNiZTEyM2MiLz48dGV4dCB4PSI1MTAiIHk9IjkwIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjZmZmIj4zPC90ZXh0Pjx0ZXh0IHg9IjYwOCIgeT0iODIiIGZvbnQtc2l6ZT0iMTEuNSIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iIzlmMTIzOSI+Q3JlYXIgbGEgdGFibGEgZGUgcHJvZHVjdG9zPC90ZXh0Pjx0ZXh0IHg9IjYwOCIgeT0iOTkiIGZvbnQtc2l6ZT0iMTEiIGZpbGw9IiM2YjVhNjMiPnkgY2FyZ2FyIGZpbGFzPC90ZXh0Pgo8cmVjdCB4PSIyMCIgeT0iMTMyIiB3aWR0aD0iMjE2IiBoZWlnaHQ9IjY2IiByeD0iMTQiIGZpbGw9InVybCgjZykiIHN0cm9rZT0iI2ZiNzE4NSIgc3Ryb2tlLXdpZHRoPSIyIi8+CjxjaXJjbGUgY3g9IjQ2IiBjeT0iMTY1IiByPSIxNCIgZmlsbD0iI2JlMTIzYyIvPjx0ZXh0IHg9IjQ2IiB5PSIxNzAiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiNmZmYiPjQ8L3RleHQ+PHRleHQgeD0iMTQ0IiB5PSIxNjIiIGZvbnQtc2l6ZT0iMTEuNSIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iIzlmMTIzOSI+Q29waWFyIGxhIEFOT04ga2V5PC90ZXh0Pjx0ZXh0IHg9IjE0NCIgeT0iMTc5IiBmb250LXNpemU9IjExIiBmaWxsPSIjNmI1YTYzIj55IGxhIFVSTCBkZWwgcHJveWVjdG88L3RleHQ+CjxwYXRoIGQ9Ik0yMzcgMTY1IEgyNTEiIHN0cm9rZT0iI2JlMTIzYyIgc3Ryb2tlLXdpZHRoPSIyIiBtYXJrZXItZW5kPSJ1cmwoI2EpIi8+CjxyZWN0IHg9IjI1MiIgeT0iMTMyIiB3aWR0aD0iMjE2IiBoZWlnaHQ9IjY2IiByeD0iMTQiIGZpbGw9InVybCgjZykiIHN0cm9rZT0iI2ZiNzE4NSIgc3Ryb2tlLXdpZHRoPSIyIi8+CjxjaXJjbGUgY3g9IjI3OCIgY3k9IjE2NSIgcj0iMTQiIGZpbGw9IiNiZTEyM2MiLz48dGV4dCB4PSIyNzgiIHk9IjE3MCIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iI2ZmZiI+NTwvdGV4dD48dGV4dCB4PSIzNzYiIHk9IjE2MiIgZm9udC1zaXplPSIxMS41IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjOWYxMjM5Ij5Qcm9iYXIgZW4gUG9zdG1hbiBvIGVuIHVuYTwvdGV4dD48dGV4dCB4PSIzNzYiIHk9IjE3OSIgZm9udC1zaXplPSIxMSIgZmlsbD0iIzZiNWE2MyI+ZXh0ZW5zacOzbiBkZSBwZXRpY2lvbmVzIEhUVFA8L3RleHQ+CjxwYXRoIGQ9Ik00NjkgMTY1IEg0ODMiIHN0cm9rZT0iI2JlMTIzYyIgc3Ryb2tlLXdpZHRoPSIyIiBtYXJrZXItZW5kPSJ1cmwoI2EpIi8+CjxyZWN0IHg9IjQ4NCIgeT0iMTMyIiB3aWR0aD0iMjE2IiBoZWlnaHQ9IjY2IiByeD0iMTQiIGZpbGw9InVybCgjZykiIHN0cm9rZT0iI2ZiNzE4NSIgc3Ryb2tlLXdpZHRoPSIyIi8+CjxjaXJjbGUgY3g9IjUxMCIgY3k9IjE2NSIgcj0iMTQiIGZpbGw9IiNiZTEyM2MiLz48dGV4dCB4PSI1MTAiIHk9IjE3MCIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0iI2ZmZiI+NjwvdGV4dD48dGV4dCB4PSI2MDgiIHk9IjE2MiIgZm9udC1zaXplPSIxMS41IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjOWYxMjM5Ij5IYWNlciBjb25zdWx0YXM8L3RleHQ+PHRleHQgeD0iNjA4IiB5PSIxNzkiIGZvbnQtc2l6ZT0iMTEiIGZpbGw9IiM2YjVhNjMiPmEgbGEgYmFzZSBkZSBkYXRvczwvdGV4dD4KPHRleHQgeD0iMzYwIiB5PSIyMzIiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9IiM2YjVhNjMiPklsdXN0cmFjacOzbiBwcm9waWEgYmFzYWRhIGVuIGxvcyBwYXNvcyBkZSBsYSBwcmVndW50YSA1PC90ZXh0Pgo8L2c+PC9zdmc+Cg==" alt="Seis pasos del procedimiento explicado en el video" style="display:block; max-width:100%; height:auto; margin:0 auto; border:1px solid #ffe4e6; border-radius:8px;">
+                <figcaption style="font-size:0.9rem; color:#6b5a63; text-align:center; margin-top:0.5rem;"><strong>Figura 4.</strong> Los pasos del procedimiento en orden (pregunta 5).</figcaption>
+            </figure>
+        </section>
+
+        <section id="fuentes">
+            <h2>Fuentes y Referencias</h2>
+            <ul>
+                <li>Video analizado: <a href="https://www.youtube.com/watch?v=pi33WDrgfpI" target="_blank" rel="noopener">https://www.youtube.com/watch?v=pi33WDrgfpI</a></li>
+                <li>Documentación de Supabase: <a href="https://supabase.com/docs" target="_blank" rel="noopener">supabase.com/docs</a></li>
+                <li>Row Level Security en Supabase: <a href="https://supabase.com/docs/guides/auth/row-level-security" target="_blank" rel="noopener">supabase.com/docs/guides/auth/row-level-security</a></li>
+                <li>PostgreSQL: <a href="https://www.postgresql.org" target="_blank" rel="noopener">postgresql.org</a></li>
+                <li>Postman: <a href="https://www.postman.com" target="_blank" rel="noopener">postman.com</a></li>
+                <li>Thunder Client: <a href="https://www.thunderclient.com" target="_blank" rel="noopener">thunderclient.com</a></li>
+                <li>Imágenes: ilustraciones propias (diagramas SVG) creadas para este trabajo.</li>
+            </ul>
+        </section>
+
+        <section id="entrega">
+            <h2>5. Conclusión y Entrega del Trabajo</h2>
+            <div class="cuadro-conclusion">
+                <p><strong>Conclusión personal:</strong> Supabase democratiza el desarrollo Backend reduciendo tiempos drásticamente a través de su interfaz visual intuitiva y la solidez de Postgres.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Colegio Nacional EMD Asunción Escalada · Bachillerato Técnico en Informática</p>
+        <p>Trabajo Práctico: Video y Página Web · Software / Desarrollo Web · 2026</p>
+        <p>Video analizado: <a href="https://www.youtube.com/watch?v=pi33WDrgfpI" target="_blank" rel="noopener">youtube.com/watch?v=pi33WDrgfpI</a></p>
+    </footer>
+
+</body>
+</html>
